@@ -1,0 +1,276 @@
+@import url("https://fonts.cdnfonts.com/css/miama");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter";
+  background: black;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 6.2rem;
+}
+/* banner style */
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+  padding-top: 57px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav > h3 {
+  color: rgb(230, 83, 60);
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.3rem;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 4px;
+}
+nav ul:last-child {
+  padding-right: 20px;
+}
+nav ul #one {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+  padding: 8px 20px 8px 20px;
+}
+nav .menu-bar {
+  display: none;
+  align-self: center;
+}
+.fa-bars {
+  color: white;
+  font-size: 1.5rem;
+}
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-text {
+  width: 50%;
+  align-self: center;
+}
+.banner-text h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 5rem;
+  margin-bottom: 20px;
+}
+.banner-text h1 span {
+  font-family: "Miama";
+  font-size: 9rem;
+  font-weight: 400;
+}
+.banner-text p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 3rem;
+}
+.banner-btn a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 42px;
+  padding: 16px 40px 16px 40px;
+}
+.banner-btn #btn-2 {
+  border: 1px solid rgb(255, 255, 255);
+}
+.banner-btn #btn-1 {
+  background: rgb(230, 83, 60);
+  margin-right: 14px;
+}
+.banner-img {
+  position: relative;
+}
+.banner-img img {
+  width: 100%;
+  height: 100%;
+}
+.banner-img .box1,
+.box2 {
+  width: 193px;
+  height: 98px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.8rem;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.banner-img .box1 {
+  position: absolute;
+  top: 20%;
+  right: -20%;
+}
+.banner-img .box2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+}
+.banner-img .box1 h3 {
+  color: rgb(255, 255, 255);
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+.banner-img .box2 p {
+  color: rgb(250, 250, 249);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.banner-img .box2 .red_ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(230, 83, 60);
+}
+
+/* habits section design  */
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.habit-title {
+  width: 60%;
+  margin-bottom: 3.5rem;
+}
+.habit-title h2 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.habit-title p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.habit-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.habit-card{
+  width: 231px;
+}
+.habit-card img {
+  border: 1px solid wheat;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+.habit-card h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.habit-card p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+/* responsive style */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .container.header-contents{
+    margin-bottom: 0;
+  }
+  nav ul {
+    display: none;
+  }
+  .banner-container {
+    flex-direction: column;
+  }
+  .banner-text h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+  .banner-text h1 span {
+    font-size: 4rem;
+  }
+  nav .menu-bar {
+    display: block;
+  }
+  .banner-text {
+    width: 85%;
+    align-self: flex-start;
+    margin-bottom: 48px;
+  }
+  .banner-btn a {
+    font-size: 0.6rem;
+    padding: 8px 15px;
+  }
+  .banner-img .box1,
+  .box2 {
+    width: 130px;
+    height: 80px;
+    font-size: 0.6rem;
+  }
+  .banner-img .box1 h3 {
+    font-size: 1.4rem;
+  }
+  .banner-img .box2 p {
+    font-size: 1rem;
+  }
+  .banner-img .box1 {
+    top: 5%;
+    right: 0;
+  }
+  .banner-img .box2 {
+    bottom: 30%;
+    left: 0;
+  }
+  .banner-img .box2 .red_ball {
+    width: 30px;
+    height: 30px;
+  }
+  .habit-title{
+    width: 100%;
+  }
+  .habit-title h2{
+    font-size: 2rem;
+  }
+  .habit-card p{
+    font-size: 0.7rem;
+  }
+  .habit-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
