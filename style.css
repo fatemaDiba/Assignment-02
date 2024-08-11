@@ -204,12 +204,12 @@ nav .menu-bar {
 /* Run-mile section style */
 .run-mile {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 5rem;
   border-radius: 18px;
   background: rgb(34, 34, 34);
-  padding: 20px 20px;
+  padding: 1.2rem;
 }
 .run-text {
   width: 45%;
@@ -352,6 +352,40 @@ select option {
   font-weight: 600;
   padding: 12px 40px 12px 40px;
 }
+/* unique section design */
+.unique {
+  background: url(images/exercise2.png), rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+.diet {
+  padding: 2rem;
+}
+.diet h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.diet-tips {
+  display: flex;
+  gap: 3rem;
+}
+.tip h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.tip p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 /* team section design */
 .team-title {
   text-align: center;
@@ -535,6 +569,7 @@ footer {
   .run-mile {
     flex-direction: column;
     gap: 2rem;
+    padding: 0.7rem;
   }
   .run-text {
     width: 100%;
@@ -619,8 +654,17 @@ footer {
   .calculator {
     width: 100%;
   }
-  .calculator-form{
+  .calculator-form {
     gap: 0.5rem;
   }
-  
+  .diet{
+    padding: 2rem 0;
+  }
+  .diet h2{
+    text-align:start;
+    font-size: 1.3rem;
+  }
+  .diet-tips{
+    flex-direction: column;
+  }
 }
